@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* 
+ * Page name
+ * Copyright 2023
+ * Author
+ * Licensed
+ */
+/* ----------------------------- *\
+    Content
+\* ----------------------------- */
+/**
+ * Content.......................You are reading it!
+ * Globel .......................Set common styles
+ * Layout .......................Set grid styles
+ * Component ....................Set component styles
+ */
+
+/* ----------------------------- *\
+    Globel
+\* ----------------------------- */
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+html,body{
+    font-family: Arial;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    /* 列表前的點去除 */
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* ----------------------------- *\
+    Layout
+\* ----------------------------- */
+.container{
+    width: 1200px;
+    /* 版型置中 */
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* border: 1px solid #333; */
+}
+.row{
+    border: 1px solid blue;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.row:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-1-2,.col-1-3,.col-1-4{
+    border: 1px solid red;
+    float: left;
+    height: 300px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.col-1-2{
+    width: 50%;
+}
+.col-1-3{
+    width: 33.333333%;
+}
+.col-1-4{
+    width: 25%;
+}
+
+/* ----------------------------- *\
+    Coponent
+\* ----------------------------- */
+
+
+/* mask-dark */
+.mask-dark{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* navbar */
+.navbar{
+    border: 1px solid #000;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+.navbar .brand{
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid #000; */
+    width: 160px;
+    height: 72px;
+    background-image: url('../images/Marvel/Disney_Plus_logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* color: #fff; */
+    /* 文字不換行 */
+    white-space: nowrap;
+    /* 縮格 */
+    text-indent: 100%;
+    /* 隱藏 */
+    overflow: hidden;
+}
+.navbar .nav{
+    float: right;
+}
+.navbar .nav .nav-item{
+    float: left;
+}
+.navbar .nav .nav-link{
+    display: block;
+    color: #fff;
+    line-height: 22px;
+    padding: 25px 25px;
+    /* border: 1px solid #fff; */
+}
+
+/* jumbotron */
+/* .jumbotron{
+    height: 900px;
+    border: 1px solid #000;
+    background-image: url('../images/Marvel/mcu-phase-4-post-cover.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.back-video{
+    height: 900px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
